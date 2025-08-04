@@ -1,0 +1,7 @@
+<h2>Lista de SharePoint</h2>
+<ul *ngIf="items.length > 0">
+  <li *ngFor="let item of items">
+    {{ item.Title }}
+  </li>
+</ul>
+<p *ngIf="items.length === 0">No hay elementos.</p>
